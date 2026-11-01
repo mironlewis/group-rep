@@ -21,7 +21,7 @@ for root, dirs, files in os.walk(MUSIC_FOLDER):
             print(f"Обробка: {audio_file}")
 
             # Завантаження лірики
-            track  Track(audio_file)
+            track = Track(audio_file)
             options = Options(download_path=temp_lrc)
             track.download_lyrics(options)
 
